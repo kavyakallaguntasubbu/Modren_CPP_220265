@@ -1,0 +1,10 @@
+#ifndef DEVICETECHNOLOGY_H
+#define DEVICETECHNOLOGY_H
+
+enum class DeviceTechnology{
+
+    BLUETOOTH, WIFI, WIFI_BLUETOOTH, OTHER
+};
+
+
+#endif // DEVICETECHNOLOGY_H

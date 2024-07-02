@@ -1,0 +1,16 @@
+
+CP ----- means ctrl c ctrl v
+MV ----- means ctrl x ctrl v
+
+cp  sourcefile destinationfile ------ if we don't mention the location it will assume the current file
+
+cp  sourcefile  . --------  (.) represents current folder
+
+copy and rename 
+
+cp sourcefilewithlocation  [newname] 
+
+we can give one 1 or more destinations
+
+we can also copy foleders from one location to another loaction
+

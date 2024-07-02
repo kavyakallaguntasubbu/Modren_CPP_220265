@@ -1,0 +1,7 @@
+// RAII -- Resource Acquisition Is Initialization
+
+ Resource :
+    1) memory
+    2) open files
+    3) Network connection
+    

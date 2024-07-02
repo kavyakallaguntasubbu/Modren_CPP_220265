@@ -1,0 +1,31 @@
+
+absoloute path -------- starts with / 
+second way ---- relative path -- with respect to my current folder
+
+enter into th path --- cd [path]
+
+copy into the path --- cp [path]
+
+move to the folder --- mv [path]
+
+Generate Key in our Laptops
+
+ssh-keygen -t rsa -b 4096 --- then three times enter
+
+LS COMMANDS : to print the folders in location in alphabetical order
+    ls -- assumes current location
+    pwd --- to find out current location
+    cd Documents -- to go into into Documents location
+    ls : can be used as location tool -- to run the commnds from any location
+    ls ~/Desktop/   ~/Documents/ ------ can access one, two or more locations 
+    ls --help : to get help
+    ls -l ~/Desktop/ : to get recent files 
+    ls -lh ~/Desktop/ : to get recent files with human readable size
+    ls -r : reverse order while sorting
+    ls -R ~/Desktop/ :  PRINT SUB folders in every folder
+    ls -a ~/Desktop/ : show all files including hidden files
+    
+
+
+
+

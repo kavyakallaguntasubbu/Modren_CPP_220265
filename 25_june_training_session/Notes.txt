@@ -1,0 +1,26 @@
+Week 2 : Modren CPP starts
+
+/*
+    software to be built
+    --------> diagnostics of car at workshop !
+
+    Objective : I want to write an "Adaptor" 1function
+    which will accept
+    a) vector of integer 32 bit numbers
+    b) a function that accepts a single integer 32 value and returns 
+    void 
+
+    Adaptor should "map" function provided onto the data provided
+
+-----------------------------------------------------------------------
+
+make a software that "DOES SOMETHING " after account is registered with the bank
+
+
+DoSOmething(action){
+    action(emailID , number);
+}
+
+DoSOmething( sendWelcomeEmail )
+
+DoSOmething(sendWhatsappMsgAndEmail)

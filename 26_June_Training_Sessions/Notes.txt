@@ -1,0 +1,81 @@
+[11:21] Namratha Reddy Mukthapuram
+Week Agenda :
+
+    week 2: functional programming
+ 
+Supplementary concepts
+
+    1)containers in c++
+
+        ->vector and C-style array
+ 
+    2)Moce semantics
+ 
+    3)RAII classes
+ 
+    4)Git version control
+ 
+    5)COmmand-line utilities
+ 
+    6)How to interact with large scale projects
+ 
+    7)recurssion and other styles of programming
+ 
+ 
+//ITERATORS
+ 
+10 20 30
+
+to store
+ 
+1) c-style array
+
+    10      20      30
+
+  0x100H   0X104H  0X108H
+
+    ^
+
+    |
+
+  arr
+ 
+2)std::vector
+
+   std::vector<int> data;
+ 
+    10      20      30
+
+  0x100H   0X104H  0X108H
+
+   ^        ^       ^
+
+   |        |       |
+ 
+  [0x100H  | 0X108H | 120H]
+ 
+3)std::list<T>
+
+0x11H                     0x200H          0x800
+nullptr|10 | 0x200H    0x11H|20|0x800  0x200H|30|nullptr
+
+for consecutive elements
+
+    from base-location to last element location (size -1)
+        - access element as
+
+            base address + (location * size of each element)
+
+for linked list 
+
+    from first location:
+        - dereference to reach the element . access it
+        - Now , read the address for next element.
+        - if next pointer is nullptr , break.
+        - else , repeat steps
+
+    universal algorithm
+    // ITERATORS are abstractors over pointers
+    a) for every element fetched from the containers
+        (DON'T GIVE A DAMN HOW YOU GET IT),
+        - access the element and do something with it.
