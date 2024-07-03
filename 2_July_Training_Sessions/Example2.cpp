@@ -30,7 +30,7 @@ public:
         return m_value + other;
     }
     // para para operator
-    ino64_t operator()(){
+    int64_t operator()(){
         mt.lock();
         std::cout << "ID : of the thresd Operator :" << std::this_thread::get_id() << "\n";
         mt.unlock();

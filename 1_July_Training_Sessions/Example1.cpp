@@ -10,7 +10,7 @@
                    for executing instructions given by the user of the computer.
                    e.g: intel - i5
  
-    4) socket : point on the motherboard hwere processor is connected.
+    4) socket : point on the motherboard where processor is connected.
  
     5) Core : Every processor  is divided internally into units called as "units"
               Each core can execute instructions from one "processor"  at any given time.

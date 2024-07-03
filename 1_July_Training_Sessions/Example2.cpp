@@ -55,8 +55,8 @@ int main(){
  
      std::thread t2{&Adaptor, &Cube, std::vector<int> { 1,2,3,4,5}};
  
-     t1.join();  //main cannot proceed beyond line 58 unless  t1 is terminated/completed.
-     t2.join();  //main cannot proceed beyond line 59 unless  t2 is terminated/completed.
+     t1.join();  
+     t2.join();  
  
  
 }
