@@ -1,0 +1,29 @@
+Regular Expressions ( rejects):
+ 
+
+ 
+symbols :
+   1)  ^ ----> start of a line
+   2)  $ ----> end of a line
+   3) \d ----> a digit
+   4) [] ----> a character set
+          e.g: [a-z] set of lowercase letters
+          e.g: [0-9] set of digits
+          e.g: [%^9] set of three characters
+ 
+   5) * ----> zero or more of the previuos token
+          e.g: a* ->  0 or more occurences of a
+          e.g: 9* ->  0 or more occurences of 9
+ 
+   6) ? ---->  one or zero occurences of something.
+          e.g: [0-9]? zero or more occurences of number from [0-9]
+ 
+   7) + ----> one or more occurences of something
+          e.g:  N+  1 or more occurences of continuous "N"
+ 
+   8){} ----> how many times previous things occur
+          e.g: a{3}  precisely
+ 
+ 
+grep --> search ( allows to search through the specific location )
+   $grep "#include"  .  --recursive  | wc -l
