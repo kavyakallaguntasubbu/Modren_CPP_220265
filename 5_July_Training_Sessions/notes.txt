@@ -1,0 +1,9 @@
+static assertion thread is initializing is wrong way;
+
+kavya kallagunta 
+kim teahyung
+webasseror.com kpit 2024 kavya kallagunta visual studio code 5 july 
+Tejashwini or place finger on the scanner 
+
+the main function 
+int main()
