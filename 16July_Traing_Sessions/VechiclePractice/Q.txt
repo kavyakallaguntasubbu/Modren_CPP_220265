@@ -1,0 +1,14 @@
+1 . Create Bikes and Operationss
+    2 . FindAvgCostOfVechicles : return the average price of all vechicles in our database
+    3 . ReturnMatchingInstance : return the first vechicle whose id matches with the id parameter
+        received
+    4 . Deallocate : release heap allocation if any!
+    5 . DisplayInsuranceAmount : show output of the insurance amount function for each instance
+    6. FindSeatcountForGivenId : fetches vechicle based on ID and returns corresponding sest_count
+
+Bike ---------  std::string m_id{""};
+                float m_price{0};
+
+Car ------------ std::string m_id{""};
+                float m_price{0};
+                unsigned int m_seat_count{0};

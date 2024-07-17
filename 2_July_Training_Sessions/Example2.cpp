@@ -15,6 +15,7 @@ public:
     MathOprtaion() = default;
     MathOprtaion(int val) : m_value{val}{}
     ~MathOprtaion() {}
+    
 
     void square(){
         mt.lock();

@@ -33,7 +33,7 @@ void ShowPFAmount(vrType &v)
     }
 }
 
-// visit is using because spfamount function is only present in both BusinessOwner and Employee
+// visit is using because spfamount function is  present in both BusinessOwner and Employee
 void ShowTaxAmount(vrType &v)
 {
     std::visit([](auto &&val)

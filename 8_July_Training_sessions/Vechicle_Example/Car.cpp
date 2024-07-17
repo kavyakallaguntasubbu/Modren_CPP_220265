@@ -6,5 +6,5 @@ Car::Car(std::string id, float price, unsigned int count) : m_id{id}, m_price{pr
 
 float Car::Insurance()
 {
-    return m_price * 0.01;
+    return m_price * 0, 01;
 }

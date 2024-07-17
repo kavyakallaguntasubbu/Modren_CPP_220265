@@ -47,7 +47,7 @@ std::optional<VrType> Operations::ReturnMatchingInstance(std::string id)
     std::optional<VrType> result{std::nullopt};
     bool m_id_found{false};
 
-    for (const VrType &v : arr)
+    for (const VrType v : arr)
     {
         std::visit([&](auto &&val)
                    {
@@ -55,7 +55,7 @@ std::optional<VrType> Operations::ReturnMatchingInstance(std::string id)
                 result = v;
                 m_id_found = true;
             } }, v);
-        if (!m_id_found)
+        if (m_id_found)
         {
             break;
         }
@@ -72,7 +72,7 @@ void Operations::Deallocate()
         std::cerr << "Empty data Container";
         mt.unlock();
     }
-    for (VrType &v : arr)
+    for (VrType v : arr)
     {
         std::visit([](auto &&val)
                    { delete val; }, v);
@@ -88,7 +88,7 @@ void Operations::DiaplayInsuranceAmount()
         mt.unlock();
     }
 
-    for (const VrType &v : arr)
+    for (const VrType v : arr)
     {
         std::visit([](auto &&val)
                    {mt.lock();std::cout<<val->Insurance() << "\n";mt.unlock(); }, v);
@@ -99,11 +99,13 @@ std::optional<unsigned int> Operations::FindSeatCountForGivenID(std::string id)
 {
     if (arr.empty())
     {
+        mt.lock();
         std::cerr << "Empty data container";
+        mt.unlock();
     }
     std::optional<unsigned int> result{std::nullopt};
     bool m_id_Found{false};
-    for (VrType v : arr)
+    for (const VrType v : arr)
     {
         if (std::holds_alternative<Car *>(v))
         {
@@ -115,9 +117,11 @@ std::optional<unsigned int> Operations::FindSeatCountForGivenID(std::string id)
             }
         }
     }
-    if (!m_id_Found)
+    if (!m_id_Found && !arr.empty())
     {
+        mt.lock();
         std::cerr << "id not found" << "\n";
+        mt.unlock();
     }
     return result;
 }
@@ -139,3 +143,4 @@ void Operations::JoinThreads()
         }
     }
 }
+                            

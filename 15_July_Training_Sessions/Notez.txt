@@ -1,0 +1,26 @@
+c- style array
+
+STL array : std::array<T,S> e.g : std::array<int,5>
+STL vector : e.g : std::vector<int>
+STL List : (doubly linked list) : e.g : std::list<int>
+
+
+STL unordered_map(hashtable key-value pair) : std::unordered_map<int,std::string>
+STL unordered_set(hashtable key) : std::unordered_set<int>
+
+// containers which have unordered in thir name is based on .hashtable
+
+Adaptors
+---------------
+
+std::stack
+
+std::stack 
+std::queue
+std::priority_queue
+
+/////////////////////////////////////// ------------ Mini Project
+Binary Search Tree(BST)
+---------------------------
+
+    - 

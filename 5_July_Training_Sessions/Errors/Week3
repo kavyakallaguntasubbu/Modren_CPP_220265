@@ -1,0 +1,15 @@
+concurrency 
+    -std::thread
+        -join,joinable,mutex,lock_guard,unique_lock
+    
+
+cpp17
+    -std::variant
+    -std::optional
+    -guarantedd copy elision
+    -if init
+    -structured binding
+
+supplementary
+    - unique ptr
+    - shared ptr

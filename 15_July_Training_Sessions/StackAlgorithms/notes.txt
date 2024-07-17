@@ -1,0 +1,4 @@
+[   [////]    [////]     [////]   [////]      ]
+
+- Average of the 4 boxes value
+- Minimum or Maximum of a certain value 

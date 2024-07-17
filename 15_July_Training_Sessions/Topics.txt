@@ -1,0 +1,12 @@
+Week 1 : 
+
+    Basic CPP 
+        - classes and objects
+        - Inheritance - single -multilevel and muliple
+        - abstrsct classes using pure virtual functions
+        - virtual keyword for runtime polymorphism
+        - operator ob=verloading [] , () , pre-increment and pre-decrement,
+                                            post-increment and post-decrement, + operator , << operator
+
+        - constructors -copy , default and parameterized
+        

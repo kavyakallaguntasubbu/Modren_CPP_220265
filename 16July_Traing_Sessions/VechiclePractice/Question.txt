@@ -1,0 +1,9 @@
+Refactor the code
+
+    --- > unordered_map = key will be "primary key" m_id attributes
+                        value : variant of car pointers and Bike pointers
+
+    
+    replace rew pointers with shared_ptr
+
+    replace member functions in Operations.cpp with regular top-level functions
